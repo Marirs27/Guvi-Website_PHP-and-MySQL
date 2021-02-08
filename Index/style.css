@@ -1,0 +1,200 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 2;
+}
+
+p {
+  opacity: 0.5;
+  font-size: 1.2rem;
+  margin: 10px 20%;
+}
+
+hr {
+  color: #f57170;
+  opacity: 0.2;
+  border-top: 5px;
+  border-style: dotted;
+  width: 120px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  background-color: rgb(255, 255, 255, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navBarText {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0px 20px;
+  text-align: left;
+}
+
+/* Sign In */
+
+#signIn {
+  font-size: 1.5rem;
+  background-color: #f57170;
+  text-align: left;
+  padding: 20px;
+}
+
+#signInSubmit a {
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+#alertBig {
+  display: block;
+}
+
+#alertSmall {
+  left: 5%;
+  display: none;
+}
+
+#alertSmall a {
+  margin-top: -3px;
+  margin-left: 25px;
+}
+
+.alterPad {
+  margin: 0px 5px;
+}
+
+.alert {
+  visibility: hidden;
+  font-size: 1rem;
+  font-weight: lighter;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  padding-right: 30px;
+  float: left;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+}
+
+.raiseError {
+  visibility: visible;
+}
+
+.tablePadding {
+  padding: 20px;
+}
+
+.form-control {
+  width: 80%;
+}
+
+.subText {
+  color: #dfd3d3;
+  margin-right: 18%;
+}
+
+.checkBoxDesign {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.checkBoxStyle {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.b {
+  margin: 10px 0px;
+  margin-right: 20px;
+}
+
+.image {
+  object-fit: cover;
+  width: 105%;
+  height: 100%;
+}
+
+/* Sign Up */
+
+#lastName {
+  margin-top: 10px;
+}
+
+#signUp {
+  font-size: 1.5rem;
+  background-color: #f57170;
+  text-align: left;
+  padding: 20px;
+}
+
+.hideSection {
+  display: none;
+}
+
+/* Footer */
+
+.contact {
+  color: #f57170;
+  margin: 10px;
+}
+
+/* Mobile Display changes */
+
+@media (max-width: 991px) {
+  .navbar {
+    background-color: rgb(255, 255, 255);
+  }
+  #signInDetails {
+    margin-left: 50px;
+  }
+  #picture {
+    margin-top: 30px;
+  }
+  #alertBig {
+    display: none;
+  }
+  #alertSmall {
+    margin-top: -40px;
+    display: block;
+  }
+  .navbar-brand {
+    font-size: 2.5rem;
+    margin-left: 5px;
+  }
+  .ic {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    right: 5px;
+  }
+  div#signUpDetails {
+    order: 4;
+  }
+  div#signInDetails {
+    order: 3;
+  }
+  div#picture {
+    order: 2;
+  }
+  div#alert {
+    order: 1;
+  }
+}

@@ -1,0 +1,241 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+p {
+  opacity: 0.5;
+  font-size: 1.2rem;
+  margin: 10px 20%;
+}
+
+hr {
+  color: #f57170;
+  opacity: 0.2;
+  border-top: 5px;
+  border-style: dotted;
+  width: 120px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  background-color: rgb(255, 255, 255, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navBarText {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0px 20px;
+  text-align: left;
+}
+
+/* Header  */
+
+#header {
+  height: 400px;
+  font-size: 1.5rem;
+  background-color: #f57170;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay {
+  color: #f5f5f5;
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 39%;
+  margin-right: 39%;
+}
+
+.centre {
+  margin-top: 12%;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 50%;
+  height: 400px;
+}
+
+/* Display Profile */
+
+#profileDetails {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 30px;
+}
+
+.fg {
+  background-color: #ffc7c7;
+}
+
+.ic {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  padding: 2px;
+  position: relative;
+  right: 20px;
+}
+
+.editBttn {
+  color: black;
+  position: relative;
+  margin-left: 1250px;
+}
+
+.editBttn:hover {
+  color: white;
+}
+
+.whiten {
+  color: white;
+}
+
+.displayRow {
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  margin-left: 18%;
+}
+
+.displayCol {
+  padding: 5px 0px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.tablePadding {
+  padding: 20px;
+}
+
+/* Update Display */
+
+::placeholder {
+  color: peachpuff;
+  font-size: 20px;
+}
+
+#updateDetails {
+  margin-top: 50px;
+  margin-left: 200px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 30px;
+}
+
+.formLabel {
+  padding: 6px 30px;
+  text-align: left;
+  float: left;
+  height: 50px;
+}
+
+.formField {
+  padding: 6px 30px;
+  font-size: 1.5rem;
+  text-align: left;
+  background-color: #ffc7c7;
+  width: 40%;
+  height: 50px;
+}
+
+.hideSection {
+  display: none;
+}
+
+/* Footer */
+
+.contact {
+  color: #f57170;
+  margin: 10px;
+}
+
+/* Mobile Display changes */
+
+@media (max-width: 991px) {
+  .navbar {
+    background-color: rgb(255, 255, 255);
+  }
+  #signInDetails {
+    margin-left: 50px;
+  }
+  .overlay {
+    margin-top: 35%;
+    margin-left: 30%;
+  }
+  #picture {
+    margin-top: 30px;
+  }
+  #profileDetails {
+    padding-top: 0px;
+    margin-bottom: 50px;
+  }
+  #profileTag {
+    padding-left: 60px;
+  }
+  #profileValue {
+    padding-left: 120px;
+  }
+  .formField {
+    margin-left: -25%;
+    margin-right: 10%;
+    width: 400px;
+  }
+  .formLabel {
+    margin-left: -25%;
+    margin-right: 10%;
+  }
+  .navbar-brand {
+    font-size: 2.5rem;
+    margin-left: 5px;
+  }
+  .ic {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    right: 5px;
+  }
+  .image {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .editBttn {
+    color: black;
+    position: relative;
+    margin-left: 580px;
+  }
+  .centre {
+    margin-top: 30%;
+    margin-left: 26%;
+  }
+  .displayRow {
+    margin-top: 10%;
+    margin-left: 11%;
+    height: 1px;
+  }
+  .displayCol {
+    margin-top: 0%;
+    height: 50px;
+  }
+}
