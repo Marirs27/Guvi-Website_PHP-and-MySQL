@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Moodle Login
+    </title>
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="images\Icon.ico" type="image/x-icon">
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/08d11cd3e5.js" crossorigin="anonymous"></script>
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS FILE  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="Index/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="NavigationBar">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <a class="navbar-brand" href="#startHere">
+                <img src="images\Icon.ico" width="45" height="45" class="d-inline-block align-top ic" alt="">
+                Moodle
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarToggle" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="navBarText nav-link" href="#aboutUs"> About Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navBarText nav-link" href="#contact"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="startHere">
+        <br>
+        <br>
+        <br>
+    </section>
+    <section id="signIn">
+        <div class="container-fluid row">
+            <div id="signInDetails" class="col-lg-6 tablePadding">
+                <h1><strong> Sign In </strong></h1>
+                <div id="alertBig" class="alert alert-warning alert-dismissible">
+                    <a id = "bigClose" href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <span> No error </span>
+                </div>
+                <div id="alertSmall" class="alert alert-warning alert-dismissible">
+                    <h6 class="alterPad">
+                        <a id = "smallClose" href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <span> No error </span>
+                    </h6>
+                </div>
+                <form id = "signInForm" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email address </label>
+                        <input type="email" name="email"
+                        class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text subText"> - We'll never share your email
+                            with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password </label>
+                        <input type="password" name="pass"
+                        class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" class="checkBoxDesign" name="staySignedIn" value=1>
+                        <label for="staySignedIn" class="checkBoxStyle subText"> Remember me . </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="signInCheck" class="form-control" id="signInCheck">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="errorMsg" class="form-control" id="errorMsg">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="errorCheck" class="form-control" id="errorCheck">
+                    </div>
+                    <button id="signUpButton" name="signUpButton" value="signUp" class="b btn btn-lg btn-danger">Sign
+                        Up</button>
+                    <button id="signInSubmit" name="signInSubmit" value="signedIn" type="submit"
+                        class="b btn btn-lg btn-danger">Submit</button>
+                </form>
+            </div>
+            <div id="picture" class="col-lg-6 img">
+                <img src="images\Welcome.jpg" class="image">
+            </div>
+        </div>
+    </section>
+    <section id="signUp" class="hideSection">
+        <div class="container-fluid row">
+            <div id="signUpDetails" class="col-lg-6 tablePadding">
+                <h1><strong> Sign Up </strong></h1>
+                <form id = "signUpForm" method="POST">
+                    <div class="form-group">
+                        <label for="Name"> Name </label>
+                        <input type="text" name="fName" class="form-control" id="Name" placeholder="First Name">
+                        <input type="text" name="lName" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobileNumber"> Phone Number </label>
+                        <input type="tel" name="pNumber" class="form-control" id="pNumber"
+                            placeholder="Mobile Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address </label>
+                        <input type="email" name="mail" class="form-control" id="mail" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password </label>
+                        <input type="password" name="pass" class="form-control" id="pass" placeholder="Password">
+                        <small class="form-text subText"> -Should be 8 characters or more. It can be any
+                            combination of letters,numbers, and symbols .</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="signUpCheck" class="form-control" id="signUpCheck">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="errorMsg" class="form-control" id="errorMsg">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="errorCheck" class="form-control" id="errorCheck">
+                    </div>
+                    <button id="signUpSubmit" name="signUpSubmit" value="signedUp" type="submit"
+                        class="b btn btn-lg btn-danger">Submit</button>
+                </form>
+            </div>
+            <div id="picture" class="col-lg-6 img">
+                <img src="images\Welcome.jpg" class="image">
+            </div>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <section id="aboutUs">
+        <h1><strong>About Us</strong></h1>
+        <p>We work together to design, create and produce work that we are proud of for folks that we believe in. We
+            are available for hire in a wide range of creative disciplines for a variety of jobs, projects and gigs.
+        </p>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <footer id="contact">
+        <br>
+        <a href="https://www.facebook.com/sriram.kannan.35380">
+            <i class="contact fab fa-facebook-square fa-lg"></i>
+        </a>
+        <a href="https://www.instagram.com/marirs2703">
+            <i class=" contact fab fa-instagram-square fa-lg"></i>
+        </a>
+        <a href="https://twitter.com/Marirs2703">
+            <i class="contact fab fa-twitter-square fa-lg"></i>
+        </a>
+        <p> © Copyright 2020 Moodle </p>
+        <br>
+    </footer>
+    <!-- JQUERY FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Index/style.js"></script>
+</body>
+
+</html>
